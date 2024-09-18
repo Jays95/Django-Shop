@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom CSS for the background image */
+        body {
+            background-image: url('https://cdn.britannica.com/74/190774-050-52CE5745/jeans-denim-pants-clothing.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(0, 47, 13); /* Set text color to white */
+        }
+        .login-form {
+            /* Add any additional styling for your login form here */
+            /* For example, adjust margins, padding, font styles, etc. */
+        }
+        h4 {
+            font-weight: bold; /* Make all h4 headings bold */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <hr>
+       
+        <h1>Login as User</h1>
+        <form action="{% url 'user_auth:authenticate_user' %}" method="post">
+            {% csrf_token %}
+            <hr>
+            <h6>Username</h6>
+            <hr>
+            <input type="text" name="username" placeholder="User">
+            <br>
+            <hr>
+            <h6>Password</h6>
+            <hr>
+            <input type="password" name="password">
+            <hr>
+            <button type="submit" name="login">Login</button>
+            <hr>
+            <br><br>
+            <br>
+            <hr>
+            <button><a href="{% url 'user_auth:register' %}">Register Here</a></button>
+            <hr>
+        </form>
+    </div>
+</body>
+</html>

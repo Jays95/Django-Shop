@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Our Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2xuLcF0HilRXKb3k9uJYHFKyq9uHy3xpQUJjJIj1NglP4312JjvF-D07HA3SRCqlWeZ8&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ffffff; /* White text for better readability on the image */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ffffff; /* White text for better readability on the image */
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .subscribe-btn {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Receive updates on new arrivals, special offers, and our promotions.</p>
+        <input type="email" placeholder="Enter your email address">
+        <br><br>
+        <a href="{% url 'shop:subscribe' %}" class="subscribe-btn">Subscribe</a>
+        <form action="{% url 'shop:subscribe' %}" method="post"></form>
+    </div>
+</body>
+</html>

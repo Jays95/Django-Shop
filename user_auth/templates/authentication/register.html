@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Please register in the form below</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+        <p>Or log in here:</p>
+        <button class="btn btn-link"><a href="{% url 'user_auth:user_login' %}">Login Here</a></button>
+    </div>
+</body>
+</html>
+

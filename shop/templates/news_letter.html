@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denim Fashion Newsletter</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.fruugo.com/product/0/55/938584550_max.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to Our Denim Newsletter</h1>
+        <p>Stay updated with the latest denim trends, exclusive offers, and more!</p>
+        <form action="{% url 'shop:newsletter' %}" method="post">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>Join our denim community and be the first to know about:</p>
+        <ul>
+            <li>New denim collections</li>
+            <li>Styling tips and outfit inspiration</li>
+            <li>Behind-the-scenes stories from our design team</li>
+            <li>Exclusive discounts and early access</li>
+            <li>Denim care guides and sustainability practices</li>
+        </ul>
+        <p>Ready to rock your denim? Subscribe now!</p>
+    </div>
+</body>
+</html>
