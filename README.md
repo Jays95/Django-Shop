@@ -55,6 +55,6 @@
      docker pull jays95/Django-shop
 
 ### Run the container image by using
-    docker-run -d -p 8000 jays95/Django-shop
+   docker run -d -p 8000:8000 jays95/Django-shop
 
 ---
