@@ -52,9 +52,11 @@
 [feel free to copy or click the link here](https://www.docker.com/)
 
 ### Pull container from Docker Hub ,make sure to use the    following 
-     docker pull jays95/Django-shop
+     docker-pull -d -p 8000 jays95/shop-repo
 
 ### Run the container image by using
-   docker-run -d -p 8000 jays95/shop-repo
+   ```bash
+docker-run -d -p 8000 jays95/shop-repo
+```
 
 ---
