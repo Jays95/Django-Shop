@@ -1,7 +1,7 @@
 # My Awesome shops and Authentication Project
 
 # Description
-  My project display a website that allow users to contact us, also view the different items along with the specific image they would like the purchase.The app will also take in data from the user and store it on the website in the conatact page allowing the user to interact with any complaints and suggestions etc ,the app also allow the user to make changes to the questions and choices they submitted . It's essential to leave rooms for errors which can be change again on a later stage if there are anything the user would like to change 
+  My project display a website that allow users to contact us, also view the different items along with the specific image they would like the purchase.The app will also take in data from the user and store it on the website in the contact page allowing the user to interact with any complaints and suggestions etc ,the app also allow the user to make changes to the questions and choices they submitted . It's essential to leave rooms for errors which can be change again on a later stage if there are anything the user would like to change 
 #  Table of content
 
 - Installing
